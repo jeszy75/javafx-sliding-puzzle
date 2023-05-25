@@ -125,6 +125,7 @@ public class GameController {
     }
 
     private void populateGrid() {
+        grid.getChildren().clear();
         for (var row = 0; row < grid.getRowCount(); row++) {
             for (var col = 0; col < grid.getColumnCount(); col++) {
                 var square = createSquare(row, col);
